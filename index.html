@@ -169,7 +169,7 @@
         <a href="mailto:aayambajaj4@gmail.com" class="hover:underline">Email</a>
         <a href="https://github.com/aayam-bajaj" class="hover:underline">GitHub</a>
         <a href="https://www.linkedin.com/in/aayam-bajaj-4a94b82a9" class="hover:underline">LinkedIn</a>
-        <a href="assets/AAYAMBAJAJRESUME.pdf" class="hover:underline">Resume</a>
+        <a href="assets/AAYAMBAJAJ_RESUME.pdf" class="hover:underline">Resume</a>
       </div>
     </section>
 
@@ -414,9 +414,6 @@
         certIndex = (certIndex + 1) % certCount;
         updateCertCarousel(certIndex);
       });
-        certIndex = (certIndex + 1) % 2;
-        updateCertCarousel(certIndex);
-      });
     }
     // Optional: swipe support for mobile
     let startX = null;
@@ -428,10 +425,10 @@
         if (startX === null) return;
         const endX = e.changedTouches[0].clientX;
         if (endX - startX > 50) {
-          certIndex = (certIndex - 1 + 2) % 2;
+          certIndex = (certIndex - 1 + certCount) % certCount;
           updateCertCarousel(certIndex);
         } else if (startX - endX > 50) {
-          certIndex = (certIndex + 1) % 2;
+          certIndex = (certIndex + 1) % certCount;
           updateCertCarousel(certIndex);
         }
         startX = null;
