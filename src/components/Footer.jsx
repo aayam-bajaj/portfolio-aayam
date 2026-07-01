@@ -40,7 +40,7 @@ export default function Footer() {
             <FaEnvelope size={20} />
           </a>
           <a 
-            href={`${import.meta.env.BASE_URL}assets/AAYAMBAJAJ_RESUME.pdf`}
+            href={`${import.meta.env.BASE_URL}assets/AAYAMBAJAJ_RESUME.pdf?v=2`}
             target="_blank" 
             rel="noopener noreferrer"
             className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-accent hover:bg-white/10 transition-all hover:scale-110"

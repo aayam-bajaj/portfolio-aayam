@@ -59,7 +59,7 @@ export default function Hero() {
             </a>
             
             <a 
-              href={`${import.meta.env.BASE_URL}assets/AAYAMBAJAJ_RESUME.pdf`}
+              href={`${import.meta.env.BASE_URL}assets/AAYAMBAJAJ_RESUME.pdf?v=2`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border border-white/20 text-white font-semibold rounded-full hover:bg-white/5 transition-colors"
